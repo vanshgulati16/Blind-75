@@ -17,3 +17,6 @@ class Solution:
             post = post*nums[j]
             j-=1
         return output
+        
+# Time complexity: O(N) as using two loops independently.
+# Space Complexity: O(N) as using one output array of size N
