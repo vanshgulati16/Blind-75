@@ -1,3 +1,5 @@
+#Question: https://leetcode.com/problems/delete-nodes-and-return-forest/description/?envType=daily-question&envId=2024-07-17
+
 #Approach: To delete nodes from a binary tree and return the resulting forest, we can use a depth-first search (DFS) traversal. First, convert the list of nodes to delete into a set for 
 # efficient lookups. During the DFS, check if each node should be deleted. If a node is not to be deleted and is a root (either the original root or because its parent was deleted), add 
 # it to the result list. Recursively process the left and right children, passing down whether the current node is deleted. This information helps determine if the children become new roots. 
